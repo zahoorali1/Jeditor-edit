@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="jEditJars1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/out/production/jEdit/jEditJars/xercesSamples.jar!/" />
+      <root url="jar://$PROJECT_DIR$/out/production/jEdit/jEditJars/hamcrest-all-1.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/out/production/jEdit/jEditJars/jsr305-2.0.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/out/production/jEdit/jEditJars/tools.jar!/" />
+      <root url="jar://$PROJECT_DIR$/out/production/jEdit/jEditJars/resolver.jar!/" />
+      <root url="jar://$PROJECT_DIR$/out/production/jEdit/jEditJars/serializer.jar!/" />
+      <root url="jar://$PROJECT_DIR$/out/production/jEdit/jEditJars/xml-apis.jar!/" />
+      <root url="jar://$PROJECT_DIR$/out/production/jEdit/jEditJars/xercesImpl.jar!/" />
+      <root url="jar://$PROJECT_DIR$/out/production/jEdit/jEditJars/ant.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

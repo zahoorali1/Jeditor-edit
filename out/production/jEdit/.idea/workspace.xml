@@ -1,26 +1,84 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7545044-347f-4a2f-a5a3-8396e7afc7ce" name="Changes" comment="" />
+    <list default="true" id="e7545044-347f-4a2f-a5a3-8396e7afc7ce" name="Changes" comment="project initiated">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org/gjt/sp/jedit/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/org/gjt/sp/jedit/View.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org/gjt/sp/jedit/browser/BrowserCommandsMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/org/gjt/sp/jedit/browser/BrowserCommandsMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org/gjt/sp/jedit/browser/VFSBrowser.java" beforeDir="false" afterPath="$PROJECT_DIR$/org/gjt/sp/jedit/browser/VFSBrowser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jEdit/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jEdit/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/View$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/View$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/View$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/View$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/View$CaretHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/View$CaretHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/View$FocusHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/View$FocusHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/View$MyFocusTraversalPolicy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/View$MyFocusTraversalPolicy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/View$ScrollHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/View$ScrollHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/View$SetCursorVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/View$SetCursorVisitor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/View$ViewConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/View$ViewConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/View$WindowHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/View$WindowHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/View.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/View.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/browser/BrowserCommandsMenu$ActionHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/browser/BrowserCommandsMenu$ActionHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/browser/BrowserCommandsMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/browser/BrowserCommandsMenu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/browser/VFSBrowser$ActionHandler$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/browser/VFSBrowser$ActionHandler$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/browser/VFSBrowser$ActionHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/browser/VFSBrowser$ActionHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/browser/VFSBrowser$BrowserActionContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/browser/VFSBrowser$BrowserActionContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/browser/VFSBrowser$CommandsMenuButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/browser/VFSBrowser$CommandsMenuButton.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/browser/VFSBrowser$DelayedEndRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/browser/VFSBrowser$DelayedEndRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/browser/VFSBrowser$DirectoriesOnlyFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/browser/VFSBrowser$DirectoriesOnlyFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/browser/VFSBrowser$FavoritesMenuButton$ActionHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/browser/VFSBrowser$FavoritesMenuButton$ActionHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/browser/VFSBrowser$FavoritesMenuButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/browser/VFSBrowser$FavoritesMenuButton.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/browser/VFSBrowser$HistoryComboBoxEditor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/browser/VFSBrowser$HistoryComboBoxEditor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/browser/VFSBrowser$MenuButton$Action.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/browser/VFSBrowser$MenuButton$Action.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/browser/VFSBrowser$MenuButton$MouseHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/browser/VFSBrowser$MenuButton$MouseHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/browser/VFSBrowser$MenuButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/browser/VFSBrowser$MenuButton.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/browser/VFSBrowser$PluginsMenuButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/browser/VFSBrowser$PluginsMenuButton.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/browser/VFSBrowser$VFSFileFilterRenderer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/browser/VFSBrowser$VFSFileFilterRenderer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/gui/LogViewer$LogSettings$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/gui/LogViewer$LogSettings$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/jEdit$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/jEdit$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/jEdit$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/jEdit$8.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$PROJECT_DIR$/../../../../../Program Files/Java/jdk-20/lib/src.zip!/java.desktop/javax/swing/JMenuBar.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/../../../../../Program Files/Java/jdk-20/lib/src.zip!/java.desktop/javax/swing/plaf/basic/BasicMenuUI.java" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2VdKBQYkU3211DBiR1X6DE1uZuv" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Zahoor Ali/Downloads/Compressed/aws-toolkit-jetbrains-1.78-223.zip&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="jEdit" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.gjt.sp.jedit.jEdit" />
@@ -51,5 +109,24 @@
       <updated>1695160384204</updated>
     </task>
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="project initiated" />
+    <option name="LAST_COMMIT_MESSAGE" value="project initiated" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/org/gjt/sp/jedit/options/ToolBarOptionPane.java</url>
+          <line>206</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

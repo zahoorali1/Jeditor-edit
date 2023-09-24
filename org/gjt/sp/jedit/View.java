@@ -28,6 +28,8 @@ import java.awt.event.FocusAdapter;
 import java.awt.event.FocusEvent;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
+//import java.awt.Desktop;
+import java.awt.event.ActionListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.io.IOException;
@@ -91,6 +93,11 @@ import org.gjt.sp.jedit.visitors.JEditVisitorAdapter;
 import org.gjt.sp.util.Log;
 import org.gjt.sp.util.StandardUtilities;
 //}}}
+
+import java.awt.Desktop;
+import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
 
 /**
  * A <code>View</code> is jEdit's top-level frame window.<p>
@@ -1333,7 +1340,7 @@ public class View extends JFrame implements InputHandlerProvider
 
 		topToolBars = new JPanel(new VariableGridLayout(
 			VariableGridLayout.FIXED_NUM_COLUMNS,
-			1));
+			2));
 		bottomToolBars = new JPanel(new VariableGridLayout(
 			VariableGridLayout.FIXED_NUM_COLUMNS,
 			1));
@@ -1349,7 +1356,7 @@ public class View extends JFrame implements InputHandlerProvider
 
 		getContentPane().add(BorderLayout.CENTER,dockableWindowManager);
 
-		dockableWindowManager.init();
+       dockableWindowManager.init();
 
 		// tool bar and status bar gets added in propertiesChanged()
 		// depending in the 'tool bar alternate layout' setting.
@@ -1751,6 +1758,8 @@ loop:		while (true)
 					}
 					stack.push(splitPane = new JSplitPane(
 						orientation,
+
+
 						(Component)obj1,
 						(Component)obj2));
 					splitPane.setOneTouchExpandable(true);
@@ -1837,66 +1846,86 @@ loop:		while (true)
 		return (Component)obj;
 	} //}}}
 
+//	private void openGoogleInBrowser() {
+//		try {
+//			// Open the default web browser to Google
+//
+//		} catch (java.io.IOException | java.net.URISyntaxException e) {
+//			e.printStackTrace();
+//		}
+//	}
+
+
 	//{{{ propertiesChanged() method
 	/**
 	 * Reloads various settings from the properties.
 	 */
-	private void propertiesChanged()
-	{
-		JMenuBar mbar = GUIUtilities.loadMenuBar("view.mbar");
+	private void propertiesChanged() {
+        JMenuBar mbar = GUIUtilities.loadMenuBar("view.mbar");
 
-		// menu bar mnemonics take precedence over other shortcut definitions
-		for (int i = 0; i < mbar.getMenuCount(); i++)
-		{
-			JMenu menu = mbar.getMenu(i);
-			int mnemonic = menu.getMnemonic();
-			if (mnemonic != 0)
-			{
-				Object keyBinding = inputHandler.getKeyBinding("A+" + Character.toLowerCase((char) mnemonic));
-				if (keyBinding != null)
-				{
-					menu.setMnemonic(0);
+        // menu bar mnemonics take precedence over other shortcut definitions
+
+        for (int i = 0; i < mbar.getMenuCount(); i++) {
+            JMenu menu = mbar.getMenu(i);
+            int mnemonic = menu.getMnemonic();
+            if (mnemonic != 0) {
+                Object keyBinding = inputHandler.getKeyBinding("A+" + Character.toLowerCase((char) mnemonic));
+                if (keyBinding != null) {
+                    menu.setMnemonic(0);
+                }
+            }
+        }
+        // Create the Submit Bug menu
+        JMenu submitBugMenu = new JMenu("Submit Bug");
+        mbar.add(submitBugMenu);
+        ActionListener openGoogleAction = null;
+        submitBugMenu.addActionListener(openGoogleAction);
+		submitBugMenu.addMouseListener(new java.awt.event.MouseAdapter() {
+			@Override
+			public void mouseClicked(java.awt.event.MouseEvent evt) {
+				try {
+					// Open the default web browser to source forge
+					Desktop.getDesktop().browse(new java.net.URI("https://sourceforge.net/p/jedit/bugs/"));
+				} catch (java.io.IOException | java.net.URISyntaxException e) {
+					e.printStackTrace();
 				}
 			}
-		}
+		});
 
 		setJMenuBar(mbar);
 
-		loadToolBars();
+        loadToolBars();
 
-		showFullPath = jEdit.getBooleanProperty("view.showFullPath");
-		updateTitle();
+        showFullPath = jEdit.getBooleanProperty("view.showFullPath");
+        updateTitle();
 
-		status.propertiesChanged();
+        status.propertiesChanged();
 
-		removeToolBar(status);
-		getContentPane().remove(status);
+        removeToolBar(status);
+        getContentPane().remove(status);
 
-		boolean showStatus = plainView ? jEdit.getBooleanProperty("view.status.plainview.visible") :
-				    jEdit.getBooleanProperty("view.status.visible");
-		if (jEdit.getBooleanProperty("view.toolbar.alternateLayout"))
-		{
-			getContentPane().add(BorderLayout.NORTH,topToolBars);
-			getContentPane().add(BorderLayout.SOUTH,bottomToolBars);
-			if (showStatus)
-				addToolBar(BOTTOM_GROUP,STATUS_BAR_LAYER,status);
-		}
-		else
-		{
-			mainPanel.add(topToolBars, BorderLayout.NORTH);
-			mainPanel.add(bottomToolBars, BorderLayout.SOUTH);
-			if (showStatus)
-				getContentPane().add(BorderLayout.SOUTH,status);
-		}
-		updateBufferSwitcherStates();
+        boolean showStatus = plainView ? jEdit.getBooleanProperty("view.status.plainview.visible") :
+                jEdit.getBooleanProperty("view.status.visible");
+        if (jEdit.getBooleanProperty("view.toolbar.alternateLayout")) {
+            getContentPane().add(BorderLayout.NORTH, topToolBars);
+            getContentPane().add(BorderLayout.SOUTH, bottomToolBars);
+            if (showStatus)
+                addToolBar(BOTTOM_GROUP, STATUS_BAR_LAYER, status);
+        } else {
+            mainPanel.add(topToolBars, BorderLayout.NORTH);
+            mainPanel.add(bottomToolBars, BorderLayout.SOUTH);
+            if (showStatus)
+                getContentPane().add(BorderLayout.SOUTH, status);
+        }
+        updateBufferSwitcherStates();
 
-		getRootPane().revalidate();
+        getRootPane().revalidate();
 
-		//SwingUtilities.updateComponentTreeUI(getRootPane());
+        //SwingUtilities.updateComponentTreeUI(getRootPane());
 
-		if (fullScreenMode)
-			updateFullScreenProps();
-	} //}}}
+        if (fullScreenMode)
+            updateFullScreenProps();
+    } //}}}
 
 	//{{{ updateBufferSwitcherStates() method
 	/**
@@ -2331,3 +2360,4 @@ loop:		while (true)
 	 //}}}
 
 }
+

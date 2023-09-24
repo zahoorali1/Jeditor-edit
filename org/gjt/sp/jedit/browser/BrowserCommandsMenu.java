@@ -33,23 +33,26 @@ import javax.swing.*;
 import org.gjt.sp.jedit.io.*;
 import org.gjt.sp.jedit.*;
 import org.gjt.sp.jedit.menu.MenuItemTextComparator;
+import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.KeyEvent;
 //}}}
 
 /**
  * @version $Id: BrowserCommandsMenu.java 22900 2013-03-28 21:22:13Z ezust $
  * @author Slava Pestov and Jason Ginchereau
  */
-public class BrowserCommandsMenu extends JPopupMenu
-{
+public class BrowserCommandsMenu extends JPopupMenu {
+
+
 	//{{{ BrowserCommandsMenu constructor
-	public BrowserCommandsMenu(VFSBrowser browser, VFSFile[] files)
-	{
+	public BrowserCommandsMenu(VFSBrowser browser, VFSFile[] files) {
 		this.browser = browser;
 
-		if(files != null)
-		{
+		if (files != null) {
 			VFS vfs = VFSManager.getVFSForPath(
-				files[0].getDeletePath());
+					files[0].getDeletePath());
 			int type = files[0].getType();
 
 			boolean fileOpen = (jEdit.getBuffer(files[0].getPath()) != null);
@@ -59,24 +62,22 @@ public class BrowserCommandsMenu extends JPopupMenu
 			boolean deletePathOpen = (jEdit.getBuffer(files[0].getDeletePath()) != null);
 
 			boolean delete = !deletePathOpen
-				&& (vfs.getCapabilities()
-				& VFS.DELETE_CAP) != 0;
+					&& (vfs.getCapabilities()
+					& VFS.DELETE_CAP) != 0;
 			boolean rename = !fileOpen
-				&& (vfs.getCapabilities()
-				& VFS.RENAME_CAP) != 0;
+					&& (vfs.getCapabilities()
+					& VFS.RENAME_CAP) != 0;
 
-			for(int i = 1; i < files.length; i++)
-			{
+			for (int i = 1; i < files.length; i++) {
 				VFSFile file = files[i];
 
 				VFS _vfs = VFSManager.getVFSForPath(file.getDeletePath());
 				delete &= (vfs == _vfs) && (_vfs.getCapabilities()
-					& VFS.DELETE_CAP) != 0;
+						& VFS.DELETE_CAP) != 0;
 
-				if(type == file.getType())
-					/* all good */;
-				else
-				{
+				if (type == file.getType())
+					/* all good */ ;
+				else {
 					// this will disable most operations if
 					// files of multiple types are selected
 					type = -1;
@@ -87,46 +88,41 @@ public class BrowserCommandsMenu extends JPopupMenu
 
 				// show 'close' item if at least one selected
 				// file is currently open
-				if(jEdit.getBuffer(file.getPath()) != null)
+				if (jEdit.getBuffer(file.getPath()) != null)
 					fileOpen = true;
 			}
 
-			if(type == VFSFile.DIRECTORY
-				|| type == VFSFile.FILESYSTEM)
-			{
-				if(files.length == 1)
+			if (type == VFSFile.DIRECTORY
+					|| type == VFSFile.FILESYSTEM) {
+				if (files.length == 1)
 					add(createMenuItem("browse"));
-				if(browser.getMode() == VFSBrowser.BROWSER)
+				if (browser.getMode() == VFSBrowser.BROWSER)
 					add(createMenuItem("browse-window"));
-			}
-			else if(type == VFSFile.FILE
-				&& (browser.getMode() == VFSBrowser.BROWSER
-				|| browser.getMode() == VFSBrowser.BROWSER_DIALOG))
-			{
+			} else if (type == VFSFile.FILE
+					&& (browser.getMode() == VFSBrowser.BROWSER
+					|| browser.getMode() == VFSBrowser.BROWSER_DIALOG)) {
 				add(createMenuItem("open", "22x22/actions/document-open.png"));
 				add(GUIUtilities.loadMenu(VFSBrowser.getActionContext(), "vfs.browser.open-in"));
-				if (browser.getSelectedFiles().length == 1) 
-				{
+				if (browser.getSelectedFiles().length == 1) {
 					add(createMenuItem("open-desktop", "22x22/actions/document-open.png"));
 					add(createMenuItem("insert"));
 				}
-				if(fileOpen)
+				if (fileOpen)
 					add(createMenuItem("close"));
-			}
-			else if(type != -1)
+			} else if (type != -1)
 				add(createMenuItem("open", "22x22/actions/document-open.png"));
 
-			if(rename)
+			if (rename)
 				add(createMenuItem("rename"));
 
-			if(delete)
+			if (delete)
 				add(createMenuItem("delete", "22x22/actions/edit-delete.png"));
 
 			add(createMenuItem("copy-path", "22x22/actions/edit-copy.png"));
 			add(createMenuItem("paste", "22x22/actions/edit-paste.png"));
 
-			if((files.length == 1) || (browser.getSelectedFiles().length != 0))
-		   		add(createMenuItem("properties", "22x22/actions/document-properties.png"));
+			if ((files.length == 1) || (browser.getSelectedFiles().length != 0))
+				add(createMenuItem("properties", "22x22/actions/document-properties.png"));
 
 			addSeparator();
 		}
@@ -140,13 +136,12 @@ public class BrowserCommandsMenu extends JPopupMenu
 		add(createMenuItem("synchronize"));
 		addSeparator();
 
-		if(browser.getMode() == VFSBrowser.BROWSER)
+		if (browser.getMode() == VFSBrowser.BROWSER)
 			add(createMenuItem("new-file", "22x22/actions/document-new.png"));
 
 		add(createMenuItem("new-directory", "22x22/actions/folder-new.png"));
 
-		if(browser.getMode() == VFSBrowser.BROWSER)
-		{
+		if (browser.getMode() == VFSBrowser.BROWSER) {
 			addSeparator();
 			add(createMenuItem("search-directory", "22x22/actions/system-search.png"));
 		}
@@ -155,19 +150,16 @@ public class BrowserCommandsMenu extends JPopupMenu
 
 		add(createMenuItem("show-hidden-files"));
 
-		if(browser.getMode() == VFSBrowser.BROWSER
-			|| browser.getMode() == VFSBrowser.BROWSER_DIALOG)
-		{
+		if (browser.getMode() == VFSBrowser.BROWSER
+				|| browser.getMode() == VFSBrowser.BROWSER_DIALOG) {
 			addSeparator();
 			add(createEncodingMenu());
 		}
 		JMenu customMenu = createCustomMenu();
-		if (customMenu != null)
-		{
+		if (customMenu != null) {
 			addSeparator();
 			Component[] menuComponents = customMenu.getMenuComponents();
-			for (Component menuComponent : menuComponents)
-			{
+			for (Component menuComponent : menuComponents) {
 				add((JMenuItem) menuComponent);
 			}
 		}
@@ -175,27 +167,25 @@ public class BrowserCommandsMenu extends JPopupMenu
 		addSeparator();
 		add(createPluginMenu(browser));
 		update();
+//		addSeparator();
+//		add(createsubmitMenu(browser));
+//		update();
 	} //}}}
 
 	//{{{ update() method
-	public void update()
-	{
-		if(encodingMenuItems != null && browser.currentEncoding != null)
-		{
+	public void update() {
+		if (encodingMenuItems != null && browser.currentEncoding != null) {
 			JRadioButtonMenuItem mi = encodingMenuItems.get(
-				browser.currentEncoding);
-			if(mi != null)
-			{
+					browser.currentEncoding);
+			if (mi != null) {
 				mi.setSelected(true);
 				otherEncoding.setText(jEdit.getProperty(
-					"vfs.browser.other-encoding.label"));
-			}
-			else
-			{
+						"vfs.browser.other-encoding.label"));
+			} else {
 				otherEncoding.setSelected(true);
 				otherEncoding.setText(jEdit.getProperty(
-					"vfs.browser.other-encoding-2.label",
-					new String[] { browser.currentEncoding }));
+						"vfs.browser.other-encoding-2.label",
+						new String[]{browser.currentEncoding}));
 			}
 		}
 	} //}}}
@@ -207,33 +197,30 @@ public class BrowserCommandsMenu extends JPopupMenu
 	private JRadioButtonMenuItem otherEncoding;
 
 	//{{{ createMenuItem() methods
-	private JMenuItem createMenuItem(String name, String iconName)
-	{
+	private JMenuItem createMenuItem(String name, String iconName) {
 		JMenuItem jMenuItem =
-			GUIUtilities.loadMenuItem(VFSBrowser.getActionContext(), "vfs.browser." + name, false);
+				GUIUtilities.loadMenuItem(VFSBrowser.getActionContext(), "vfs.browser." + name, false);
 		jMenuItem.setIcon(GUIUtilities.loadIcon(iconName));
 		return jMenuItem;
 	}
 
-	private JMenuItem createMenuItem(String name)
-	{
+	private JMenuItem createMenuItem(String name) {
 		return createMenuItem(name, null);
 	} //}}}
 
 	//{{{ createEncodingMenu() method
-	private JMenu createEncodingMenu()
-	{
+	private JMenu createEncodingMenu() {
 		ActionHandler actionHandler = new ActionHandler();
 
 		encodingMenuItems = new HashMap<String, JRadioButtonMenuItem>();
 		JMenu encodingMenu = new JMenu(jEdit.getProperty(
-			"vfs.browser.commands.encoding.label"));
+				"vfs.browser.commands.encoding.label"));
 
 		JMenu menu = encodingMenu;
 
 		autoDetect = new JCheckBoxMenuItem(
-			jEdit.getProperty(
-			"vfs.browser.commands.encoding.auto-detect"));
+				jEdit.getProperty(
+						"vfs.browser.commands.encoding.auto-detect"));
 		autoDetect.setSelected(browser.autoDetectEncoding);
 		autoDetect.setActionCommand("auto-detect");
 		autoDetect.addActionListener(actionHandler);
@@ -244,42 +231,38 @@ public class BrowserCommandsMenu extends JPopupMenu
 
 		List<JMenuItem> encodingMenuItemList = new ArrayList<JMenuItem>();
 		String[] encodings = MiscUtilities.getEncodings(true);
-		for(int i = 0; i < encodings.length; i++)
-		{
+		for (int i = 0; i < encodings.length; i++) {
 			String encoding = encodings[i];
 			JRadioButtonMenuItem mi = new JRadioButtonMenuItem(encoding);
 			mi.setActionCommand("encoding@" + encoding);
 			mi.addActionListener(actionHandler);
 			grp.add(mi);
-			encodingMenuItems.put(encoding,mi);
+			encodingMenuItems.put(encoding, mi);
 			encodingMenuItemList.add(mi);
 		}
 
 		String systemEncoding = System.getProperty("file.encoding");
-		if(encodingMenuItems.get(systemEncoding) == null)
-		{
+		if (encodingMenuItems.get(systemEncoding) == null) {
 			JRadioButtonMenuItem mi = new JRadioButtonMenuItem(
-				systemEncoding);
+					systemEncoding);
 			mi.setActionCommand("encoding@" + systemEncoding);
 			mi.addActionListener(actionHandler);
 			grp.add(mi);
-			encodingMenuItems.put(systemEncoding,mi);
+			encodingMenuItems.put(systemEncoding, mi);
 			encodingMenuItemList.add(mi);
 		}
 
 		Collections.sort(encodingMenuItemList,
-			new MenuItemTextComparator());
+				new MenuItemTextComparator());
 
 		Iterator iter = encodingMenuItemList.iterator();
-		while(iter.hasNext())
-		{
+		while (iter.hasNext()) {
 			JRadioButtonMenuItem mi = (JRadioButtonMenuItem)
-				iter.next();
+					iter.next();
 
-			if(menu.getMenuComponentCount() > 20)
-			{
+			if (menu.getMenuComponentCount() > 20) {
 				JMenu newMenu = new JMenu(
-					jEdit.getProperty("common.more"));
+						jEdit.getProperty("common.more"));
 				menu.add(newMenu);
 				menu = newMenu;
 			}
@@ -298,24 +281,21 @@ public class BrowserCommandsMenu extends JPopupMenu
 	} //}}}
 
 	//{{{ createCustomMenu() method
-	private JMenu createCustomMenu()
-	{
-		if (jEdit.getProperty("browser.custom.context", "").length() != 0)
-		{
+	private JMenu createCustomMenu() {
+		if (jEdit.getProperty("browser.custom.context", "").length() != 0) {
 			JMenu custom = GUIUtilities.loadMenu(VFSBrowser.getActionContext(),
-				"browser.custom.context");
+					"browser.custom.context");
 			return custom;
 		}
 		return null;
 	} //}}}
 
 	//{{{ createPluginsMenu() method
-	private JMenu createPluginMenu(VFSBrowser browser)
-	{
+	private JMenu createPluginMenu(VFSBrowser browser) {
 		JMenu pluginMenu = new JMenu(jEdit.getProperty(
-			"vfs.browser.plugins.label"));
+				"vfs.browser.plugins.label"));
 		GUIUtilities.setAutoMnemonic(pluginMenu);
-		return (JMenu)browser.createPluginsMenu(pluginMenu,false);
+		return (JMenu) browser.createPluginsMenu(pluginMenu, false);
 
 	} //}}}
 
@@ -323,31 +303,25 @@ public class BrowserCommandsMenu extends JPopupMenu
 	//}}}
 
 	//{{{ ActionHandler class
-	class ActionHandler implements ActionListener
-	{
-		public void actionPerformed(ActionEvent evt)
-		{
+	class ActionHandler implements ActionListener {
+		public void actionPerformed(ActionEvent evt) {
 			String actionCommand = evt.getActionCommand();
 
-			if(actionCommand.equals("auto-detect"))
-			{
+			if (actionCommand.equals("auto-detect")) {
 				browser.autoDetectEncoding
-					= autoDetect.isSelected();
-			}
-			else if(actionCommand.equals("other-encoding"))
-			{
+						= autoDetect.isSelected();
+			} else if (actionCommand.equals("other-encoding")) {
 				String encoding = GUIUtilities.input(browser,
-					"encoding-prompt",null,
-					jEdit.getProperty("buffer.encoding",
-					System.getProperty("file.encoding")));
-				if(encoding == null)
+						"encoding-prompt", null,
+						jEdit.getProperty("buffer.encoding",
+								System.getProperty("file.encoding")));
+				if (encoding == null)
 					return;
 				browser.currentEncoding = encoding;
-			}
-			else if(actionCommand.startsWith("encoding@"))
-			{
+			} else if (actionCommand.startsWith("encoding@")) {
 				browser.currentEncoding = actionCommand.substring(9);
 			}
 		}
 	} //}}}
 }
+

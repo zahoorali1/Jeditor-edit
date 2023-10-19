@@ -175,6 +175,7 @@ public class SyntaxUtilities
 	 * @exception IllegalArgumentException if the style is invalid
 	 * @since jEdit 4.3pre13
 	 */
+
 	public static SyntaxStyle parseStyle(String str, String family, int size,
 		boolean color)
 		throws IllegalArgumentException
@@ -227,6 +228,6 @@ public class SyntaxUtilities
 
 		return styles;
 	} //}}}
-	
+
 	private SyntaxUtilities(){}
 }

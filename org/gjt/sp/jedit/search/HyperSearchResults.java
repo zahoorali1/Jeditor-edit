@@ -999,28 +999,7 @@ public class HyperSearchResults extends JPanel implements DefaultFocusComponent
 		} //}}}
 
 
-//			@Override
-//			public Component getTreeCellRendererComponent(JTree tree, Object value, boolean selected, boolean expanded, boolean leaf, int row, boolean hasFocus) {
-//
-//				Component c = super.getTreeCellRendererComponent(tree, value, selected, expanded, leaf, row, hasFocus);
-//
-//				HyperSearchResult result = (HyperSearchResult)value;
-//				String lineText = result.toString();
-//
-//				// Check if line is comment
-//				if(lineText.startsWith("//") || lineText.startsWith("/*") || lineText.startsWith("*/")) {
-//					// Highlight comment matches in green
-//					DefaultHighlighter.DefaultHighlightPainter greenPainter = new DefaultHighlighter.DefaultHighlightPainter(Color.green);
-//					setHighlighter(greenPainter);
-//				}
-//				else {
-//					// Highlight code matches in red
-//					DefaultHighlighter.DefaultHighlightPainter redPainter = new DefaultHighlighter.DefaultHighlightPainter(Color.red);
-//					setHighlighter(redPainter);
-//				}
-//
-//				return c;
-//			}
+
 
 
 

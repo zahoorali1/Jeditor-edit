@@ -74,9 +74,9 @@ import java.util.WeakHashMap;
 public abstract class EnhancedTreeCellRenderer extends DefaultTreeCellRenderer
 {
 	//{{{ getTreeCellRendererComponent() method
-	public final Component getTreeCellRendererComponent(JTree tree,
-		Object value, boolean selected, boolean expanded,
-		boolean leaf, int row, boolean hasFocus)
+	public Component getTreeCellRendererComponent(JTree tree,
+                                                  Object value, boolean selected, boolean expanded,
+                                                  boolean leaf, int row, boolean hasFocus)
 	{
 		if (!propertyChangeListeners.containsKey(tree))
 		{

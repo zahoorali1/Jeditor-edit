@@ -490,7 +490,6 @@ public class HyperSearchResults extends JPanel implements DefaultFocusComponent
 		return s;
 	} //}}}
 
-	//}}}
 
 	//{{{ ActionHandler class
 	public class ActionHandler implements ActionListener
@@ -556,11 +555,20 @@ public class HyperSearchResults extends JPanel implements DefaultFocusComponent
 		}
 
 		@Override
-		public String convertValueToText(Object value, boolean selected,
-				boolean expanded, boolean leaf, int row, boolean hasFocus)
+		public String convertValueToText(Object value, boolean selected, boolean expanded, boolean leaf, int row, boolean hasFocus)
 		{
 			String s = super.convertValueToText(value, selected, expanded, leaf,
-				row, hasFocus);
+					row, hasFocus);
+			// Check if the text contains comments
+			if (s.contains("//") || s.contains("/*") && s.contains("*/")|| s.contains("...") ) {
+				// Set the background color for comments (e.g., green)
+				return "<html><span style='background-color:#00FF00;'>" + s + "</span></html>";
+			}
+			// Check if the text contains Java code
+			if (s.matches(".\\b\\w+\\b.")) {
+				// Set the background color for Java code (e.g., red)
+				return "<html><span style='background-color:#FF0000;'>" + s + "</span></html>";
+			}
 			String newProp = jEdit.getProperty(HIGHLIGHT_PROP);
 			if (newProp == null || newProp.isEmpty())
 				return s;
@@ -575,11 +583,11 @@ public class HyperSearchResults extends JPanel implements DefaultFocusComponent
 			{
 				prop = newProp;
 				Font f = (resultTree != null) ? resultTree.getFont() :
-					UIManager.getFont("Tree.font");
+						UIManager.getFont("Tree.font");
 				styleTag = HtmlUtilities.style2html(prop, f);
 			}
 			SearchMatcher matcher =
-				((HyperSearchOperationNode) node.getUserObject()).getSearchMatcher();
+					((HyperSearchOperationNode) node.getUserObject()).getSearchMatcher();
 			int i = s.indexOf(": ");
 			if (i > 0)
 				i += 2;
@@ -592,8 +600,7 @@ public class HyperSearchResults extends JPanel implements DefaultFocusComponent
 			} catch (InterruptedException e) {
 				Thread.currentThread().interrupt();
 			}
-			while (m != null)
-			{
+			while (m != null) {
 				matches.add(i + m.start);
 				matches.add(i + m.end);
 				i += m.end;
@@ -606,9 +613,12 @@ public class HyperSearchResults extends JPanel implements DefaultFocusComponent
 					m = null;
 				}
 			}
+
 			return HtmlUtilities.highlightString(s, styleTag, matches);
+
 		}
 	} //}}}
+ //}}}
 
 	//{{{ KeyHandler class
 	class KeyHandler extends KeyAdapter
@@ -987,6 +997,32 @@ public class HyperSearchResults extends JPanel implements DefaultFocusComponent
 			boldFont = new Font(plainFont.getName(),Font.BOLD,
 				plainFont.getSize());
 		} //}}}
+
+
+//			@Override
+//			public Component getTreeCellRendererComponent(JTree tree, Object value, boolean selected, boolean expanded, boolean leaf, int row, boolean hasFocus) {
+//
+//				Component c = super.getTreeCellRendererComponent(tree, value, selected, expanded, leaf, row, hasFocus);
+//
+//				HyperSearchResult result = (HyperSearchResult)value;
+//				String lineText = result.toString();
+//
+//				// Check if line is comment
+//				if(lineText.startsWith("//") || lineText.startsWith("/*") || lineText.startsWith("*/")) {
+//					// Highlight comment matches in green
+//					DefaultHighlighter.DefaultHighlightPainter greenPainter = new DefaultHighlighter.DefaultHighlightPainter(Color.green);
+//					setHighlighter(greenPainter);
+//				}
+//				else {
+//					// Highlight code matches in red
+//					DefaultHighlighter.DefaultHighlightPainter redPainter = new DefaultHighlighter.DefaultHighlightPainter(Color.red);
+//					setHighlighter(redPainter);
+//				}
+//
+//				return c;
+//			}
+
+
 
 		@Override
 		protected TreeCellRenderer newInstance()

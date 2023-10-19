@@ -4,43 +4,39 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7545044-347f-4a2f-a5a3-8396e7afc7ce" name="Changes" comment="project initiated">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="e7545044-347f-4a2f-a5a3-8396e7afc7ce" name="Changes" comment="project initiated&#10;&#10;added submit bug button">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org/gjt/sp/jedit/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/org/gjt/sp/jedit/View.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org/gjt/sp/jedit/browser/BrowserCommandsMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/org/gjt/sp/jedit/browser/BrowserCommandsMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org/gjt/sp/jedit/browser/VFSBrowser.java" beforeDir="false" afterPath="$PROJECT_DIR$/org/gjt/sp/jedit/browser/VFSBrowser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jEdit/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org/gjt/sp/jedit/search/HyperSearchResults.java" beforeDir="false" afterPath="$PROJECT_DIR$/org/gjt/sp/jedit/search/HyperSearchResults.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org/gjt/sp/util/EnhancedTreeCellRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/org/gjt/sp/util/EnhancedTreeCellRenderer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org/gjt/sp/util/SyntaxUtilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/org/gjt/sp/util/SyntaxUtilities.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/jEdit/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/View$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/View$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/View$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/View$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/View$CaretHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/View$CaretHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/View$FocusHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/View$FocusHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/View$MyFocusTraversalPolicy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/View$MyFocusTraversalPolicy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/View$ScrollHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/View$ScrollHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/View$SetCursorVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/View$SetCursorVisitor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/View$ViewConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/View$ViewConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/View$WindowHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/View$WindowHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/View.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/View.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/browser/BrowserCommandsMenu$ActionHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/browser/BrowserCommandsMenu$ActionHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/browser/BrowserCommandsMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/browser/BrowserCommandsMenu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/browser/VFSBrowser$ActionHandler$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/browser/VFSBrowser$ActionHandler$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/browser/VFSBrowser$ActionHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/browser/VFSBrowser$ActionHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/browser/VFSBrowser$BrowserActionContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/browser/VFSBrowser$BrowserActionContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/browser/VFSBrowser$CommandsMenuButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/browser/VFSBrowser$CommandsMenuButton.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/browser/VFSBrowser$DelayedEndRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/browser/VFSBrowser$DelayedEndRequest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/browser/VFSBrowser$DirectoriesOnlyFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/browser/VFSBrowser$DirectoriesOnlyFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/browser/VFSBrowser$FavoritesMenuButton$ActionHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/browser/VFSBrowser$FavoritesMenuButton$ActionHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/browser/VFSBrowser$FavoritesMenuButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/browser/VFSBrowser$FavoritesMenuButton.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/browser/VFSBrowser$HistoryComboBoxEditor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/browser/VFSBrowser$HistoryComboBoxEditor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/browser/VFSBrowser$MenuButton$Action.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/browser/VFSBrowser$MenuButton$Action.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/browser/VFSBrowser$MenuButton$MouseHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/browser/VFSBrowser$MenuButton$MouseHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/browser/VFSBrowser$MenuButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/browser/VFSBrowser$MenuButton.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/browser/VFSBrowser$PluginsMenuButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/browser/VFSBrowser$PluginsMenuButton.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/browser/VFSBrowser$VFSFileFilterRenderer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/browser/VFSBrowser$VFSFileFilterRenderer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/gui/LogViewer$LogSettings$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/gui/LogViewer$LogSettings$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/jEdit$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/jEdit$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/jEdit$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/jEdit$8.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/search/HyperSearchResults$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/search/HyperSearchResults$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/search/HyperSearchResults$ActionHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/search/HyperSearchResults$ActionHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/search/HyperSearchResults$BufferClosedVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/search/HyperSearchResults$BufferClosedVisitor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/search/HyperSearchResults$BufferLoadedVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/search/HyperSearchResults$BufferLoadedVisitor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/search/HyperSearchResults$CollapseChildTreeNodesAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/search/HyperSearchResults$CollapseChildTreeNodesAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/search/HyperSearchResults$CopyToClipboardAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/search/HyperSearchResults$CopyToClipboardAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/search/HyperSearchResults$ExpandChildTreeNodesAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/search/HyperSearchResults$ExpandChildTreeNodesAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/search/HyperSearchResults$GoToNodeAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/search/HyperSearchResults$GoToNodeAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/search/HyperSearchResults$HighlightingTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/search/HyperSearchResults$HighlightingTree.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/search/HyperSearchResults$KeyHandler$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/search/HyperSearchResults$KeyHandler$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/search/HyperSearchResults$KeyHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/search/HyperSearchResults$KeyHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/search/HyperSearchResults$MouseHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/search/HyperSearchResults$MouseHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/search/HyperSearchResults$NewSearchAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/search/HyperSearchResults$NewSearchAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/search/HyperSearchResults$RedoSearchAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/search/HyperSearchResults$RedoSearchAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/search/HyperSearchResults$RemoveAllTreeNodesAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/search/HyperSearchResults$RemoveAllTreeNodesAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/search/HyperSearchResults$RemoveTreeNodeAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/search/HyperSearchResults$RemoveTreeNodeAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/search/HyperSearchResults$ResultCellRenderer$CountNodes.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/search/HyperSearchResults$ResultCellRenderer$CountNodes.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/search/HyperSearchResults$ResultCellRenderer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/search/HyperSearchResults$ResultCellRenderer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/search/HyperSearchResults$ResultTreeTransferHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/search/HyperSearchResults$ResultTreeTransferHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/search/HyperSearchResults$ToStringNodes.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/search/HyperSearchResults$ToStringNodes.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/search/HyperSearchResults$TreeDisplayAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/search/HyperSearchResults$TreeDisplayAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/search/HyperSearchResults$TreeNodeCallbackAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/search/HyperSearchResults$TreeNodeCallbackAdapter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/search/HyperSearchResults.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/search/HyperSearchResults.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/util/SyntaxUtilities.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/util/SyntaxUtilities.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +70,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Zahoor Ali/Downloads/Compressed/aws-toolkit-jetbrains-1.78-223.zip&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Zahoor Ali/Desktop&quot;,
     &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
@@ -108,11 +104,29 @@
       <option name="presentableId" value="Default" />
       <updated>1695160384204</updated>
     </task>
+    <task id="LOCAL-00001" summary="project initiated&#10;&#10;added submit bug button">
+      <option name="closed" value="true" />
+      <created>1695593841790</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1695593841790</updated>
+    </task>
+    <task id="LOCAL-00002" summary="project initiated&#10;&#10;added submit bug button">
+      <option name="closed" value="true" />
+      <created>1695594251365</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1695594251365</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="project initiated" />
-    <option name="LAST_COMMIT_MESSAGE" value="project initiated" />
+    <MESSAGE value="project initiated&#10;&#10;added submit bug button" />
+    <option name="LAST_COMMIT_MESSAGE" value="project initiated&#10;&#10;added submit bug button" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -25,7 +25,7 @@ package org.gjt.sp.util;
 import java.awt.Color;
 import java.awt.Font;
 import java.util.List;
-
+import java.util.Arrays;
 import org.gjt.sp.jedit.syntax.SyntaxStyle;
 
 /**
@@ -39,30 +39,26 @@ import org.gjt.sp.jedit.syntax.SyntaxStyle;
  * @since 4.4pre1
  */
 
-public class HtmlUtilities
-{
+public class HtmlUtilities {
 	//{{{ public section
 
 	//{{{ parseHighlightStyle()
+
 	/**
 	 * Parses a string specifying a syntax highlight style.
-	 *
+	 * <p>
 	 * The syntax highlight string should be in the same format used to
 	 * store syntax highlight styles in the properties.
 	 *
 	 * @param style The syntax highlight style string.
-	 * @param f The font to which the syntax style will apply.
+	 * @param f     The font to which the syntax style will apply.
 	 * @return The SyntaxStyle object represented by the style string.
 	 */
-	public static SyntaxStyle parseHighlightStyle(String style, Font f)
-	{
+	public static SyntaxStyle parseHighlightStyle(String style, Font f) {
 		SyntaxStyle s;
-		try
-		{
+		try {
 			s = SyntaxUtilities.parseStyle(style, f.getFamily(), f.getSize(), true, null);
-		}
-		catch (Exception e)
-		{
+		} catch (Exception e) {
 			style = "color:#000000";
 			s = SyntaxUtilities.parseStyle(style, f.getFamily(), f.getSize(), true);
 		}
@@ -70,19 +66,19 @@ public class HtmlUtilities
 	} //}}}
 
 	//{{{ style2html()
+
 	/**
 	 * Parses a string specifying a syntax highlight style, and creates an
 	 * HTML representation for it.
-	 *
+	 * <p>
 	 * The syntax highlight string should be in the same format used to
 	 * store syntax highlight styles in the properties.
 	 *
 	 * @param prop The syntax highlight style string.
-	 * @param f The font to which the syntax style will apply.
-	 * @return The HTML representation of the given syntax style. 
+	 * @param f    The font to which the syntax style will apply.
+	 * @return The HTML representation of the given syntax style.
 	 */
-	public static String style2html(String prop, Font f)
-	{
+	public static String style2html(String prop, Font f) {
 		StringBuilder tag = new StringBuilder();
 		SyntaxStyle style = parseHighlightStyle(prop, f);
 		Color c = style.getForegroundColor();
@@ -100,24 +96,23 @@ public class HtmlUtilities
 	} //}}}
 
 	//{{{ highlightString()
+
 	/**
 	 * Creates an HTML presentation of a given string, where selected substrings
 	 * are highlighted with a given syntax style tag.
 	 *
-	 * @param s The (non-HTML) string to highlight. 
+	 * @param s        The (non-HTML) string to highlight.
 	 * @param styleTag The HTML string representing the highlight style.
-	 * @param ranges The indices of the substrings to highlight, in pairs: The start
-	 *               index of a substring followed by the end index of the substring.
-	 * @return The HTML representation of the string with highlighted substrings. 
+	 * @param ranges   The indices of the substrings to highlight, in pairs: The start
+	 *                 index of a substring followed by the end index of the substring.
+	 * @return The HTML representation of the string with highlighted substrings.
 	 */
-	public static String highlightString(String s, String styleTag, List<Integer> ranges)
-	{
+	public static String highlightString(String s, String styleTag, List<Integer> ranges) {
 		StringBuilder sb = new StringBuilder("<html><style>.highlight {");
 		sb.append(styleTag);
 		sb.append("}</style><body>");
 		int lastIndex = 0;
-		for (int i = 0; i < ranges.size(); i += 2)
-		{
+		for (int i = 0; i < ranges.size(); i += 2) {
 			int rangeStart = ranges.get(i);
 			int rangeEnd = ranges.get(i + 1);
 			appendString2html(sb, s.substring(lastIndex, rangeStart));
@@ -132,52 +127,49 @@ public class HtmlUtilities
 	} //}}}
 
 	//{{{ appendString2html
+
 	/**
 	 * Appends a given non-HTML string to an HTML string, translating character
 	 * entities to the appropriate HTML form.
-	 * 
+	 *
 	 * @param sb The HTML string to which the non-HTML string is appended.
-	 * @param s The non-HTML string to append.
+	 * @param s  The non-HTML string to append.
 	 */
-	public static void appendString2html(StringBuilder sb, String s)
-	{
-		for (int i = 0; i < s.length(); i++)
-		{
+	public static void appendString2html(StringBuilder sb, String s) {
+		for (int i = 0; i < s.length(); i++) {
 			char c = s.charAt(i);
 			String r;
-			switch (c)
-			{
-			case '"':
-				r = "&quot;";
-				break;
-			// case '\'': r = "&apos;"; break;
-			case '&':
-				r = "&amp;";
-				break;
-			case '<':
-				r = "&lt;";
-				break;
-			case '>':
-				r = "&gt;";
-				break;
-			case ' ':
-				r = "&nbsp;";	// Maintain amount of whitespace in line
-				break;
-			default:
-				r = String.valueOf(c);
-				break;
+			switch (c) {
+				case '"':
+					r = "&quot;";
+					break;
+				// case '\'': r = "&apos;"; break;
+				case '&':
+					r = "&amp;";
+					break;
+				case '<':
+					r = "&lt;";
+					break;
+				case '>':
+					r = "&gt;";
+					break;
+				case ' ':
+					r = "&nbsp;";    // Maintain amount of whitespace in line
+					break;
+				default:
+					r = String.valueOf(c);
+					break;
 			}
 			sb.append(r);
 		}
 	} //}}}
-	
+
 	//}}}
 
 	//{{{ private section
 
 	//{{{ color2html()
-	private static String color2html(Color c)
-	{
+	private static String color2html(Color c) {
 		StringBuilder cs = new StringBuilder("rgb(");
 		cs.append(c.getRed());
 		cs.append(",");
@@ -189,4 +181,36 @@ public class HtmlUtilities
 	} //}}}
 
 	//}}}
+
+// In HyperSearchResults class
+
+	// Add line type enum
+	enum LineType {
+		COMMENT,
+		CODE
+	}
+
+	// Determine line type
+	private LineType getLineType(String line) {
+		if (line.trim().startsWith("//") || line.trim().startsWith("/*") || line.contains("@")) {
+			return LineType.COMMENT;
+		} else {
+			return LineType.CODE;
+		}
+	}
+
+	// Highlight matches
+	public void highlightMatch(String line, int start, int end) {
+
+		LineType type = getLineType(line);
+
+		String style = null;
+		if (type == LineType.COMMENT) {
+			style = "background-color: green";
+		} else if (type == LineType.CODE) {
+			style = "background-color: red";
+		}
+
+		highlightString(line, style, Arrays.asList(start, end));
+	}
 }

@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7545044-347f-4a2f-a5a3-8396e7afc7ce" name="Changes" comment="project initiated&#10;&#10;added submit bug button&#10;&#10;added hyper search function green background for comments and red background for source code">
+    <list default="true" id="e7545044-347f-4a2f-a5a3-8396e7afc7ce" name="Changes" comment="project initiated&#10;&#10;added submit bug button&#10;&#10;added hyper search function green background for comments and red background for source code&#10;added label for date modified for file search">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org/gjt/sp/jedit/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/org/gjt/sp/jedit/View.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org/gjt/sp/jedit/search/HyperSearchResults.java" beforeDir="false" afterPath="$PROJECT_DIR$/org/gjt/sp/jedit/search/HyperSearchResults.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/org/gjt/sp/jedit/search/SearchDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/org/gjt/sp/jedit/search/SearchDialog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/util/EnhancedTreeCellRenderer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/util/EnhancedTreeCellRenderer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/util/HtmlUtilities.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/util/HtmlUtilities.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +109,31 @@
       <option name="project" value="LOCAL" />
       <updated>1697732164632</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="project initiated&#10;&#10;added submit bug button&#10;&#10;added hyper search function green background for comments and red background for source code&#10;add">
+      <option name="closed" value="true" />
+      <created>1701963152850</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1701963152850</updated>
+    </task>
+    <task id="LOCAL-00006" summary="project initiated&#10;&#10;added submit bug button&#10;&#10;added hyper search function green background for comments and red background for source code&#10;added label for date modified for file search">
+      <option name="closed" value="true" />
+      <created>1701963198264</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1701963198264</updated>
+    </task>
+    <task id="LOCAL-00007" summary="project initiated&#10;&#10;added submit bug button&#10;&#10;added hyper search function green background for comments and red background for source code&#10;added label for date modified for file search">
+      <option name="closed" value="true" />
+      <created>1701963223748</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1701963223748</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -127,7 +151,8 @@
     <MESSAGE value="project initiated" />
     <MESSAGE value="project initiated&#10;&#10;added submit bug button" />
     <MESSAGE value="project initiated&#10;&#10;added submit bug button&#10;&#10;added hyper search function green background for comments and red background for source code" />
-    <option name="LAST_COMMIT_MESSAGE" value="project initiated&#10;&#10;added submit bug button&#10;&#10;added hyper search function green background for comments and red background for source code" />
+    <MESSAGE value="project initiated&#10;&#10;added submit bug button&#10;&#10;added hyper search function green background for comments and red background for source code&#10;added label for date modified for file search" />
+    <option name="LAST_COMMIT_MESSAGE" value="project initiated&#10;&#10;added submit bug button&#10;&#10;added hyper search function green background for comments and red background for source code&#10;added label for date modified for file search" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

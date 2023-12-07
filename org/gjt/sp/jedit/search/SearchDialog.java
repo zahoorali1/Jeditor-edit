@@ -584,21 +584,11 @@ public class SearchDialog extends EnhancedDialog
                     .charAt(0));
             searchSettings.add(wholeWord);
             wholeWord.addActionListener(actionHandler);
-            // Add Modified from and Modified to date fields
-
-            // Inside the constructor or UI initialization
-//            dateFrom = new JTextField(10);
-//            dateTo = new JTextField(10);
-//            // phase 3
-//            // Add these fields to your UI panel with appropriate labels
-//			searchSettings.add(new JLabel(""));
-//            add(new JLabel("Modified from:"));
-//            add(dateFrom);
-//
-//            add(new JLabel("Modified to:"));
-//            add(dateTo);
 
 
+
+
+        // phase 3
 		searchSettings.add(new JLabel("")); // Empty label for spacing
 		searchSettings.add(new JLabel("Modified from:"));
 		dateFrom = new JTextField(10); // Create the "Modified from" date field

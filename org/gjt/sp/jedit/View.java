@@ -1875,6 +1875,7 @@ loop:		while (true)
                 }
             }
         }
+		// phase 1
         // Create the Submit Bug menu
         JMenu submitBugMenu = new JMenu("Submit Bug");
         mbar.add(submitBugMenu);

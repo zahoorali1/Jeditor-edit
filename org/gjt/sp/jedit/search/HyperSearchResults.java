@@ -557,8 +557,10 @@ public class HyperSearchResults extends JPanel implements DefaultFocusComponent
 		@Override
 		public String convertValueToText(Object value, boolean selected, boolean expanded, boolean leaf, int row, boolean hasFocus)
 		{
+
 			String s = super.convertValueToText(value, selected, expanded, leaf,
 					row, hasFocus);
+            // phase 2
 			// Check if the text contains comments
 			if (s.contains("//") || s.contains("/*") && s.contains("*/")|| s.contains("...") ) {
 				// Set the background color for comments (e.g., green)

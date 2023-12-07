@@ -6,36 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="e7545044-347f-4a2f-a5a3-8396e7afc7ce" name="Changes" comment="project initiated&#10;&#10;added submit bug button&#10;&#10;added hyper search function green background for comments and red background for source code">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org/gjt/sp/jedit/search/HyperSearchResults.java" beforeDir="false" afterPath="$PROJECT_DIR$/org/gjt/sp/jedit/search/HyperSearchResults.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org/gjt/sp/util/EnhancedTreeCellRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/org/gjt/sp/util/EnhancedTreeCellRenderer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org/gjt/sp/util/HtmlUtilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/org/gjt/sp/util/HtmlUtilities.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org/gjt/sp/util/SyntaxUtilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/org/gjt/sp/util/SyntaxUtilities.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jEdit/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/gui/LogViewer$LogSettings$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/gui/LogViewer$LogSettings$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/search/HyperSearchResults$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/search/HyperSearchResults$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/search/HyperSearchResults$ActionHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/search/HyperSearchResults$ActionHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/search/HyperSearchResults$BufferClosedVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/search/HyperSearchResults$BufferClosedVisitor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/search/HyperSearchResults$BufferLoadedVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/search/HyperSearchResults$BufferLoadedVisitor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/search/HyperSearchResults$CollapseChildTreeNodesAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/search/HyperSearchResults$CollapseChildTreeNodesAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/search/HyperSearchResults$CopyToClipboardAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/search/HyperSearchResults$CopyToClipboardAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/search/HyperSearchResults$ExpandChildTreeNodesAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/search/HyperSearchResults$ExpandChildTreeNodesAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/search/HyperSearchResults$GoToNodeAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/search/HyperSearchResults$GoToNodeAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/search/HyperSearchResults$HighlightingTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/search/HyperSearchResults$HighlightingTree.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/search/HyperSearchResults$KeyHandler$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/search/HyperSearchResults$KeyHandler$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/search/HyperSearchResults$KeyHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/search/HyperSearchResults$KeyHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/search/HyperSearchResults$MouseHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/search/HyperSearchResults$MouseHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/search/HyperSearchResults$NewSearchAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/search/HyperSearchResults$NewSearchAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/search/HyperSearchResults$RedoSearchAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/search/HyperSearchResults$RedoSearchAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/search/HyperSearchResults$RemoveAllTreeNodesAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/search/HyperSearchResults$RemoveAllTreeNodesAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/search/HyperSearchResults$RemoveTreeNodeAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/search/HyperSearchResults$RemoveTreeNodeAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/search/HyperSearchResults$ResultCellRenderer$CountNodes.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/search/HyperSearchResults$ResultCellRenderer$CountNodes.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/search/HyperSearchResults$ResultCellRenderer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/search/HyperSearchResults$ResultCellRenderer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/search/HyperSearchResults$ResultTreeTransferHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/search/HyperSearchResults$ResultTreeTransferHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/search/HyperSearchResults$ToStringNodes.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/search/HyperSearchResults$ToStringNodes.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/search/HyperSearchResults$TreeDisplayAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/search/HyperSearchResults$TreeDisplayAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/search/HyperSearchResults$TreeNodeCallbackAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/search/HyperSearchResults$TreeNodeCallbackAdapter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/search/HyperSearchResults.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/jedit/search/HyperSearchResults.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/util/SyntaxUtilities.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/util/SyntaxUtilities.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org/gjt/sp/jedit/search/SearchDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/org/gjt/sp/jedit/search/SearchDialog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/util/EnhancedTreeCellRenderer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/util/EnhancedTreeCellRenderer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/util/HtmlUtilities.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jEdit/org/gjt/sp/util/HtmlUtilities.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +17,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="jar://$PROJECT_DIR$/../../../../../Program Files/Java/jdk-20/lib/src.zip!/java.desktop/javax/swing/JMenuBar.java" root0="SKIP_INSPECTION" />
@@ -119,7 +93,23 @@
       <option name="project" value="LOCAL" />
       <updated>1695594251365</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="project initiated&#10;&#10;added submit bug button&#10;&#10;added hyper search function green background for comments and red background for source code">
+      <option name="closed" value="true" />
+      <created>1697731839343</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1697731839343</updated>
+    </task>
+    <task id="LOCAL-00004" summary="project initiated&#10;&#10;added submit bug button&#10;&#10;added hyper search function green background for comments and red background for source code">
+      <option name="closed" value="true" />
+      <created>1697732164632</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1697732164632</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -147,8 +137,22 @@
           <line>206</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/org/gjt/sp/jedit/search/SearchDialog.java</url>
+          <line>126</line>
+          <properties class="org.gjt.sp.jedit.search.SearchDialog" method="setSearchString">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="javax.swing.JRadioButton" memberName="model" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
